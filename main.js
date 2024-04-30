@@ -22,5 +22,7 @@ $(document).ready(function(){
         followers.text(json.followers);
         following.text(json.following);
         github.attr('href', json.html_url);
+    }).catch(function(){
+        alert('Algo deu errado, tente novamente mais tarde');
     })
 })
